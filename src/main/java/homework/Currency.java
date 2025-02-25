@@ -1,4 +1,5 @@
 package homework;
 
-public class Currency {
+public enum Currency {
+    UAH, USD, EUR
 }
