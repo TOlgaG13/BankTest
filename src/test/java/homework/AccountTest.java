@@ -13,10 +13,10 @@ public class AccountTest {
     @Test
     public void testAccountCreation() {
         Account account = new Account();
-        account.setCurrency(Currency.USD); // Правильный способ задания валюты
+        account.setCurrency(Currency.USD);
         account.setBalance(new BigDecimal("100.00"));
 
-        assertEquals(Currency.USD, account.getCurrency()); // Исправлено: сравниваем с Currency
+        assertEquals(Currency.USD, account.getCurrency());
         assertEquals(new BigDecimal("100.00"), account.getBalance());
     }
 }
